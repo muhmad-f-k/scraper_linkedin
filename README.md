@@ -1,4 +1,10 @@
-Create a .env file in your current directory and populate it with the following lines:
+## Configuration
 
-LINKEDIN_USERNAME="your email"
-LINKEDIN_PASSWORD="your password"
+1. Create a `.env` file in your current directory.
+
+2. Populate the `.env` file with the following lines:
+
+   ```shell
+   LINKEDIN_USERNAME="your email"
+   LINKEDIN_PASSWORD="your password"
+   ```
