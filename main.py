@@ -97,11 +97,11 @@ class LinkedIn:
         if not self.load_cookies():
             # If cookies can't be loaded, manually enter the username and password
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(
-                (By.ID, "username"))).send_keys(self.username)
+                (By.CSS_SELECTOR, "#username"))).send_keys(self.username)
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(
-                (By.ID, "password"))).send_keys(self.password)
+                (By.CSS_SELECTOR, "#password"))).send_keys(self.password)
             WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(
-                (By.XPATH, '//button[@class="btn__primary--large from__button--floating"]'))).click()
+                (By.CSS_SELECTOR, '#organic-div > form > div.login__form_action_container > button'))).click()
             # Save the cookies after logging in
             self.save_cookies()
 
